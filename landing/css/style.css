@@ -1,0 +1,101 @@
+body {
+    margin: 0;
+    font-family: "Inter", sans-serif;
+    background: #f7f3ef;
+    color: #333;
+}
+
+/* hero */
+.hero {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 40px 20px;
+    background: linear-gradient(135deg, #f1ede8, #faf7f4);
+}
+
+.hero-content {
+    flex: 1;
+    min-width: 300px;
+}
+
+.hero-content h1 {
+    font-size: 36px;
+}
+
+.subtitle {
+    font-size: 18px;
+    color: #666;
+    margin: 10px 0 20px;
+}
+
+.hero-photo img {
+    max-width: 280px;
+    border-radius: 20px;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+}
+
+.btn-primary {
+    display: inline-block;
+    background: #6fb08f;
+    color: white;
+    padding: 12px 24px;
+    border-radius: 10px;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+/* Sections */
+.section {
+    padding: 50px 20px;
+}
+
+.section h2 {
+    font-size: 28px;
+    margin-bottom: 20px;
+}
+
+.meetings {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.meeting {
+    background: white;
+    padding: 20px;
+    border-radius: 16px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+    flex: 1;
+    min-width: 230px;
+}
+
+/* Highlight block */
+.highlight {
+    background: #e9f5ee;
+    border-radius: 20px;
+}
+
+.results li {
+    margin: 8px 0;
+}
+
+/* Form */
+.signup .form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    max-width: 350px;
+}
+
+input {
+    padding: 12px;
+    border-radius: 10px;
+    border: 1px solid #ccc;
+}
+
+/* Footer */
+.footer {
+    padding: 20px;
+    text-align: center;
+    color: #888;
+}
