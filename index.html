@@ -3,80 +3,214 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Жизнь без постоянной тревоги</title>
-    <link rel="stylesheet" href="css/style.css">
+    <title>Жизнь без постоянной тревоги — онлайн-тренинг</title>
+
+    <style>
+        body {
+            margin: 0;
+            font-family: "Inter", sans-serif;
+            background: #f7f3ef;
+            color: #333;
+        }
+
+        header.hero {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+            padding: 50px 20px;
+            background: linear-gradient(135deg, #f1ede8, #faf7f4);
+        }
+
+        .logo-box img {
+            width: 90px;
+            opacity: 0.9;
+            margin-bottom: 20px;
+        }
+
+        h1 {
+            font-size: 36px;
+            margin: 0 0 15px;
+        }
+
+        .subtitle {
+            font-size: 18px;
+            color: #666;
+            max-width: 320px;
+            margin: 0 auto 20px;
+        }
+
+        .hero-photo img {
+            width: 230px;
+            border-radius: 20px;
+            box-shadow: 0 10px 25px rgba(0,0,0,0.12);
+            margin-top: 25px;
+        }
+
+        .btn-primary {
+            display: inline-block;
+            background: #6fb08f;
+            color: white;
+            padding: 12px 30px;
+            border-radius: 12px;
+            text-decoration: none;
+            font-weight: 600;
+            margin-top: 10px;
+        }
+
+        .section {
+            padding: 55px 20px;
+            text-align: center;
+        }
+
+        .section h2 {
+            font-size: 30px;
+            margin-bottom: 25px;
+        }
+
+        .meetings {
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+            max-width: 650px;
+            margin: auto;
+        }
+
+        .meeting {
+            background: #ffffff;
+            padding: 20px;
+            border-radius: 18px;
+            box-shadow: 0 4px 18px rgba(0,0,0,0.06);
+        }
+
+        .highlight {
+            background: #e9f5ee;
+            border-radius: 25px;
+            margin: 40px 15px;
+            padding: 40px 20px;
+        }
+
+        .results {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            font-size: 18px;
+        }
+
+        .results li {
+            margin: 10px 0;
+        }
+
+        .signup .form {
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+            max-width: 350px;
+            margin: auto;
+        }
+
+        input {
+            padding: 14px;
+            border-radius: 12px;
+            border: 1px solid #ccc;
+        }
+
+        button.btn-primary {
+            border: none;
+            cursor: pointer;
+        }
+
+        footer {
+            padding: 30px 20px;
+            text-align: center;
+            color: #888;
+            font-size: 14px;
+        }
+
+        /* Simple fade-in animations */
+        .fade {
+            opacity: 0;
+            transform: translateY(20px);
+            transition: 1s ease;
+        }
+
+        .fade.visible {
+            opacity: 1;
+            transform: translateY(0);
+        }
+    </style>
+
 </head>
 <body>
 
-<header class="hero">
-    <div class="hero-content">
-        <div class="logo-box">
-            <!-- вставь логотип тренинга -->
-            <img src="img/logo.png" alt="Логотип" class="logo">
-        </div>
-
-        <h1>Жизнь без постоянной тревоги</h1>
-        <p class="subtitle">4-недельный онлайн-тренинг по снижению тревоги и управлению состоянием</p>
-
-        <a href="#signup" class="btn-primary">Записаться</a>
+<header class="hero fade">
+    <div class="logo-box">
+        <!-- IMG/logo.png -->
+        <img src="img/logo.png" alt="Логотип">
     </div>
 
+    <h1>Жизнь без постоянной тревоги</h1>
+    <p class="subtitle">4-недельный практический онлайн-тренинг по снижению тревоги</p>
+
+    <a href="#signup" class="btn-primary">Записаться</a>
+
     <div class="hero-photo">
-        <!-- Фото ведущего -->
+        <!-- img/author.jpg -->
         <img src="img/author.jpg" alt="Ведущий">
     </div>
 </header>
 
-<section class="section">
+<section class="section fade">
     <h2>О тренинге</h2>
     <p>
-        Это практический курс из четырёх встреч, который помогает понять природу тревоги,
-        научиться управлять состоянием и снизить накрутку в 2–4 раза.
+        Это практический курс из четырёх встреч, который научит понимать тревогу,
+        снижать накрутку и возвращать контроль над своим состоянием.
     </p>
 
     <div class="meetings">
         <div class="meeting">
             <h3>1 встреча</h3>
-            <p>Понимаем природу тревоги, учимся замечать мысли и реакции.</p>
+            <p>Как работает тревога. Замечаем мысли и реакции.</p>
         </div>
         <div class="meeting">
             <h3>2 встреча</h3>
-            <p>Работаем с тревожными мыслями. Практика “мысль или факт”.</p>
+            <p>Оспаривание тревожных мыслей. “Мысль или факт”.</p>
         </div>
         <div class="meeting">
             <h3>3 встреча</h3>
-            <p>Разбор дневников, меняем реакции, учимся действовать вопреки тревоге.</p>
+            <p>Разбор дневников. Меняем реакции и уменьшаем накрутку.</p>
         </div>
         <div class="meeting">
             <h3>4 встреча</h3>
-            <p>Как двигаться дальше. Работа с убеждениями, план самоподдержки.</p>
+            <p>Как двигаться дальше. Работа с убеждениями.</p>
         </div>
     </div>
 </section>
 
-<section class="section highlight">
+<section class="section highlight fade">
     <h2>Итог тренинга</h2>
     <ul class="results">
         <li>понимание механизма тревоги</li>
         <li>умение останавливать накрутку</li>
-        <li>контроль за реакциями и поведением</li>
+        <li>контроль за эмоциями и реакциями</li>
         <li>снижение тревоги в 2–4 раза</li>
     </ul>
 </section>
 
-<section class="section">
+<section class="section fade">
     <h2>Формат</h2>
-    <ul>
+    <ul style="list-style:none; padding:0; font-size:18px;">
         <li>Онлайн в Zoom</li>
-        <li>1 раз в неделю • по 2 часа</li>
-        <li>Доступно и комфортно, без глубоких откровений и давления</li>
+        <li>1 раз в неделю • 2 часа</li>
+        <li>Тёплая, безопасная атмосфера</li>
+        <li>Без глубоких откровений и давления</li>
     </ul>
 
-    <h3>Старт: <b>2 декабря</b></h3>
+    <h3 style="margin-top:20px;">Старт: <b>2 декабря</b></h3>
     <h3>Скидка перед Новым годом: <b>-40%</b></h3>
 </section>
 
-<section id="signup" class="section signup">
+<section id="signup" class="section signup fade">
     <h2>Записаться на тренинг</h2>
 
     <form action="https://t.me/your_bot_name" method="GET" class="form">
@@ -87,10 +221,22 @@
     </form>
 </section>
 
-<footer class="footer">
+<footer class="fade">
     <p>© 2024 Жизнь без постоянной тревоги</p>
 </footer>
 
-<script src="js/script.js"></script>
+<script>
+    // Анимация появления по мере прокрутки
+    const observer = new IntersectionObserver(entries => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                entry.target.classList.add('visible');
+            }
+        });
+    });
+
+    document.querySelectorAll('.fade').forEach(el => observer.observe(el));
+</script>
+
 </body>
 </html>
